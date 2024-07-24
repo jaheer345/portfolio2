@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Student Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('hai.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: rgba(14, 14, 14, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 5px solid #2abdbd;
+            background: url('pro.jpg');
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #fff;
+            border-bottom: 2px solid #b9b8b8;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #fff;
+            color: #000;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #6b6d6d;
+        }
+
+        .contact a, .resume a {
+            color: #fff; /* Default color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover, .contact a:focus, .resume a:hover, .resume a:focus {
+            color: #6b6d6d; /* Hover color */
+        }
+
+        .project {
+            background: #fff;
+            color: #000;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #6b6d6d;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .project-details {
+            display: none;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 150px;
+            width: calc(100% - 180px);
+            max-height: 300px;
+            opacity: 0;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .project:hover .project-details {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .project-details p {
+            margin-bottom: 10px;
+        }
+
+        .project-details img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #1acfb4;
+            background: #53787a;
+            color: #0f0404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JAHEER</h1>
+            <p>Engineering Student</p>
+        </header>
+
+        <div class="profile-image">
+            <img src="spandana.jpg" alt="Profile Image">
+        </div>
+
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:jaheershaik345@gmail.com">jaheershaik345@gmail.com</a></p>
+            <p>Phone: +91 9550711429</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-jaheer-9a5228261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">JAHEER.SHAIK</a></p>
+            <p>Download my <a href="https://drive.google.com/file/d/112AbLM56pUTDjIEEmRYSGog5T-oQBUId/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">resume</a> in PDF format.</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>SRM University</strong></p>
+            <p>Bachelor of Your Engineering in the department of Artificial Intelligence and Data Science, Expected Graduation: June, 2026</p>
+            <h2>About Me</h2>
+            <p>I am an enthusiastic,dedicated and self motivated person. I have good interpersonal skills, am an excellent team worker. I am a good timekeeper,always willing to learn new skills.</p>
+            <p>GPA: 8.0</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong><br> Python<br> Java<br> C<br>HTML<br>CSS<br>JavaScript<br>SQL</li>
+                
+                <li><strong>Soft Skills:</strong> <br>Problem Solving<br> Teamwork<br> Communication<br>Adaptability<br>Creative</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>To Do list using full stack web development</h3>
+                <img src="project2.jpg" alt="To Do list using full stack web development">
+
+<div class="project-details">
+
+<p><strong>Description:</strong> Created a full stack To-Do list application using React.js for the front-end and Node.js, Express.js, and MongoDB for the back-end. Implemented features for task management including add, edit, delete, and mark as complete functionalities.</p>
+
+<p><strong>Technologies
+
+Used:</strong> HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB</
+
+p>
+
+<img src="output2.jpg"
+
+alt="Project 2 Output">
+
+</div>
+
+</div>
+            <div class="project">
+                <h3>Library management using C programming</h3>
+                <img src="project3.jpg" alt="Library management using C programming">
+                <div class="project-details">
+                    <p><strong>Description:</strong> Developed a console-based library management system in C programming. Implemented functionalities for adding, searching, issuing, returning, and deleting books using file handling for data storage.</p>
+                    <p><strong>Technologies Used:</strong> C language</p>
+                    <img src="output3.jpg" alt="Project 3 Output">
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Affiliate Marketing</li>
+                <li>Introduction to Ethical Hacking</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Jaheer. All rights reserved.</p>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/shaik-jaheer-9a5228261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+        </footer>
+    </div>
+</body>
+</html>
